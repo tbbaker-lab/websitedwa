@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#ff8a1f" />
+  <meta name="description" content="WildWorks — climb, explore and discover a world of floating islands." />
+  <title>WildWorks</title>
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <meta property="og:title" content="WildWorks">
+  <meta property="og:description" content="Climb, explore and go wild across floating islands.">
+  <meta property="og:image" content="https://wildworks.space/assets/icon-512.png">
+  <meta property="og:url" content="https://wildworks.space/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="WildWorks">
+  <meta name="twitter:description" content="Climb, explore and go wild across floating islands.">
+  <meta name="twitter:image" content="https://wildworks.space/assets/icon-512.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Luckiest+Guy&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-progress" id="pageProgress"></div>
+
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader-logo-wrap">
+      <img class="loader-logo" src="assets/studio-logo.png" alt="" />
+      <span>WILDWORKS</span>
+    </div>
+  </div>
+
+  <div class="announcement" aria-label="Announcement">
+    <div class="announcement-track">
+      <span>🔥 WILDWORKS IS BEING BUILT</span><i>•</i><span>FLOATING ISLANDS</span><i>•</i><span>CLIMB. EXPLORE. GO WILD.</span><i>•</i>
+      <span>🔥 WILDWORKS IS BEING BUILT</span><i>•</i><span>FLOATING ISLANDS</span><i>•</i><span>CLIMB. EXPLORE. GO WILD.</span><i>•</i>
+    </div>
+  </div>
+
+  <header class="site-header" id="siteHeader">
+    <nav class="nav shell" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="WildWorks home">
+        <span class="brand-mark"><img src="assets/studio-logo.png" alt="WildWorks Studio logo"></span>
+        <span class="brand-copy"><strong>WILDWORKS</strong><small>STUDIO</small></span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#world">Game</a>
+        <a href="#updates">Updates</a>
+        <a href="#creators">Creators</a>
+        <a href="#support">Support</a>
+      </div>
+
+      <div class="nav-actions">
+        <a class="round-icon" id="youtubeTop" href="https://youtube.com/@WildWorksVR" target="_blank" rel="noreferrer" aria-label="YouTube">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.6 7.2a2.8 2.8 0 0 0-2-2C17.9 4.7 12 4.7 12 4.7s-5.9 0-7.6.5a2.8 2.8 0 0 0-2 2A29 29 0 0 0 2 12a29 29 0 0 0 .4 4.8 2.8 2.8 0 0 0 2 2c1.7.5 7.6.5 7.6.5s5.9 0 7.6-.5a2.8 2.8 0 0 0 2-2A29 29 29 0 0 0 22 12a29 29 0 0 0-.4-4.8ZM10 15.2V8.8l5.6 3.2L10 15.2Z"/></svg>
+        </a>
+        <a class="round-icon discord-icon" id="discordTop" href="https://discord.gg/QYF8mFkycn" target="_blank" rel="noreferrer" aria-label="Join WildWorks Discord">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 5.3A16.4 16.4 0 0 0 15.4 4l-.5 1a15.3 15.3 0 0 0-5.8 0l-.5-1a16.4 16.4 0 0 0-4.1 1.3C1.9 9.1 1.2 12.8 1.6 16.4A16.8 16.8 0 0 0 6.7 19l1.2-1.7a10.6 10.6 0 0 1-1.9-.9l.5-.4a11.7 11.7 0 0 0 11 0l.5.4a11.5 11.5 0 0 1-1.9.9l1.2 1.7a16.8 16.8 0 0 0 5.1-2.6c.5-4.2-.8-7.9-2.9-11.1ZM8.4 14.4c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.9.9 1.8 2c0 1.1-.8 2-1.8 2Zm7.2 0c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.9.9 1.8 2c0 1.1-.8 2-1.8 2Z"/></svg>
+        </a>
+        <a class="btn btn-small btn-itch" id="itchTop" href="https://pyromanicstudios.itch.io/wildworks" target="_blank" rel="noreferrer"><span>ITCH.IO</span></a>
+        <a class="btn btn-small btn-orange" href="#world"><span>PLAY WILDWORKS</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-bg" id="heroBg" aria-hidden="true"></div>
+      <div class="hero-vignette" aria-hidden="true"></div>
+      <div class="hero-orb orb-a" data-parallax="0.04"></div>
+      <div class="hero-orb orb-b" data-parallax="-0.025"></div>
+
+      <div class="shell hero-grid">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span class="eyebrow-dot"></span> FLOATING ISLAND VR ADVENTURE</div>
+          <h1><span>WILD</span>WORKS</h1>
+          <p class="hero-lead">Leap between floating worlds, climb impossible cliffs, discover hidden places and explore with friends.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-orange btn-large magnetic" href="#world"><span>EXPLORE THE WORLD</span><b>→</b></a>
+            <a class="btn btn-cream btn-large" href="#creators"><span>WATCH CREATOR</span><b>▶</b></a>
+            <a class="btn btn-discord btn-large" href="https://discord.gg/QYF8mFkycn" target="_blank" rel="noreferrer"><span>JOIN DISCORD</span><b>↗</b></a>
+            <a class="btn btn-itch btn-large" id="itchHero" href="https://pyromanicstudios.itch.io/wildworks" target="_blank" rel="noreferrer"><span>VIEW ON ITCH.IO</span><b>↗</b></a>
+          </div>
+          <div class="hero-pills">
+            <span>🌲 Forests</span><span>❄️ Snow Peaks</span><span>🏰 Ruins</span><span>🏗️ City</span>
+          </div>
+        </div>
+
+        <div class="hero-showcase reveal delay-1" data-tilt>
+          <div class="showcase-label"><span class="live-dot"></span> WORLD PREVIEW</div>
+          <div class="showcase-photo">
+            <img src="assets/snow-island.webp" alt="WildWorks snowy floating island" />
+            <div class="photo-shade"></div>
+            <div class="photo-caption"><strong>FROZEN PEAKS</strong><span>Climb above the clouds</span></div>
+          </div>
+          <div class="mini-card mini-card-a"><span>04</span><b>ISLANDS</b></div>
+          <div class="mini-card mini-card-b"><span>∞</span><b>ROUTES</b></div>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#world" aria-label="Scroll to game section"><span></span>SCROLL TO EXPLORE</a>
+    </section>
+
+    <section class="word-ribbon" aria-hidden="true">
+      <div class="word-ribbon-track">
+        <span>CLIMB</span><i>✦</i><span>EXPLORE</span><i>✦</i><span>DISCOVER</span><i>✦</i><span>CREATE</span><i>✦</i><span>GO WILD</span><i>✦</i>
+        <span>CLIMB</span><i>✦</i><span>EXPLORE</span><i>✦</i><span>DISCOVER</span><i>✦</i><span>CREATE</span><i>✦</i><span>GO WILD</span><i>✦</i>
+      </div>
+    </section>
+
+    <section class="section world-section" id="world">
+      <div class="shell">
+        <div class="section-heading reveal">
+          <div class="eyebrow"><span class="eyebrow-dot"></span> THE WORLD</div>
+          <h2>ONE WORLD.<br><span>FOUR VIBES.</span></h2>
+          <p>WildWorks is built around connected floating islands. Each area changes the movement, atmosphere and routes you can take.</p>
+        </div>
+
+        <div class="world-layout">
+          <div class="world-visual reveal" data-tilt>
+            <img src="assets/world-overview.webp" alt="Overview of the WildWorks floating island map" />
+            <div class="world-hotspot hotspot-snow" data-label="Frozen Peaks"></div>
+            <div class="world-hotspot hotspot-forest" data-label="Wildwood"></div>
+            <div class="world-hotspot hotspot-castle" data-label="Ancient Heights"></div>
+            <div class="world-hotspot hotspot-city" data-label="Forgeworks"></div>
+            <div class="world-map-label">LIVE MAP OVERVIEW</div>
+          </div>
+
+          <div class="feature-stack">
+            <article class="feature-card reveal delay-1">
+              <span class="feature-num">01</span><div><h3>Movement first</h3><p>Every route is designed around climbing, jumping and finding your own way through the world.</p></div>
+            </article>
+            <article class="feature-card reveal delay-2">
+              <span class="feature-num">02</span><div><h3>Different biomes</h3><p>Go from icy cabins to dense forest, towering ruins and an industrial island without leaving the world.</p></div>
+            </article>
+            <article class="feature-card reveal delay-3">
+              <span class="feature-num">03</span><div><h3>Built to explore</h3><p>Bridges, vertical shortcuts, hidden ledges and landmarks make the map worth learning instead of just crossing.</p></div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="map-gallery-section" id="gallery">
+      <div class="shell">
+        <div class="gallery-heading reveal">
+          <div>
+            <div class="eyebrow light-ish"><span class="eyebrow-dot"></span> EXPLORE THE ISLANDS</div>
+            <h2>THE WORLD, <span>UP CLOSE.</span></h2>
+          </div>
+          <p>Switch between the current WildWorks islands. These use your actual map renders, with a cleaner showcase instead of AI replacing the map.</p>
+        </div>
+
+        <div class="map-gallery reveal delay-1" id="mapGallery">
+          <div class="gallery-stage">
+            <button class="gallery-arrow gallery-prev" id="galleryPrev" aria-label="Previous island">←</button>
+            <button class="gallery-arrow gallery-next" id="galleryNext" aria-label="Next island">→</button>
+
+            <div class="gallery-image-wrap">
+              <img id="galleryImage" src="assets/wildwood-hub.webp" alt="Wildwood Hub island">
+              <div class="gallery-gradient"></div>
+              <button class="gallery-expand" id="galleryExpand" aria-label="Open image fullscreen">↗</button>
+              <div class="gallery-caption">
+                <div>
+                  <span id="galleryKicker">ISLAND 01 · HUB</span>
+                  <h3 id="galleryTitle">Wildwood Hub</h3>
+                  <p id="galleryText">A sheltered green hub with shops, paths, trees and multiple routes leading out to the rest of the world.</p>
+                </div>
+                <div class="gallery-count"><strong id="galleryCurrent">01</strong><span>/ 04</span></div>
+              </div>
+            </div>
+
+            <div class="gallery-progress"><i id="galleryProgress"></i></div>
+
+            <div class="gallery-tabs" role="tablist" aria-label="WildWorks islands">
+              <button class="gallery-tab active" data-gallery-index="0">
+                <img src="assets/wildwood-hub-card.webp" alt="">
+                <span><b>Wildwood Hub</b><small>Green hub</small></span>
+              </button>
+              <button class="gallery-tab" data-gallery-index="1">
+                <img src="assets/forgeworks-card.webp" alt="">
+                <span><b>Forgeworks</b><small>Industrial island</small></span>
+              </button>
+              <button class="gallery-tab" data-gallery-index="2">
+                <img src="assets/frozen-peaks-card.webp" alt="">
+                <span><b>Frozen Peaks</b><small>Snow island</small></span>
+              </button>
+              <button class="gallery-tab" data-gallery-index="3">
+                <img src="assets/ancient-heights-card.webp" alt="">
+                <span><b>Ancient Heights</b><small>Temple island</small></span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="map-stats reveal delay-2">
+          <div><strong data-counter="4">0</strong><span>Major islands shown</span></div>
+          <div><strong data-counter="3">0</strong><span>Connected biomes</span></div>
+          <div><strong data-counter="1">0</strong><span>Connected world</span></div>
+          <div><strong>∞</strong><span>Ways to explore</span></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="lightbox" id="galleryLightbox" aria-hidden="true">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close fullscreen image">×</button>
+      <img id="lightboxImage" alt="WildWorks island fullscreen preview">
+      <div class="lightbox-title" id="lightboxTitle"></div>
+    </div>
+
+    <section class="section updates-section" id="updates">
+      <div class="shell">
+        <div class="section-heading centered reveal">
+          <div class="eyebrow"><span class="eyebrow-dot"></span> FRESH FROM THE WORKSHOP</div>
+          <h2>LATEST <span>UPDATES</span></h2>
+          <p>These are real areas from your current map, shown without turning every card into another selfie.</p>
+        </div>
+
+        <div class="updates-grid">
+          <article class="update-card reveal" data-tilt>
+            <div class="update-image"><img src="assets/snow-card.webp" alt="Frozen Peaks map"><span class="tag ice">SNOW</span></div>
+            <div class="update-body"><small>AREA 01</small><h3>Frozen Peaks</h3><p>Cabins, vertical ice cliffs and wooden routes suspended above the clouds.</p><a href="#world">Explore area <span>→</span></a></div>
+          </article>
+          <article class="update-card reveal delay-1" data-tilt>
+            <div class="update-image"><img src="assets/forest-card.webp" alt="Wildwood map"><span class="tag forest">FOREST</span></div>
+            <div class="update-body"><small>AREA 02</small><h3>Wildwood</h3><p>A greener central island packed with trees, camps, paths and climbable terrain.</p><a href="#world">Explore area <span>→</span></a></div>
+          </article>
+          <article class="update-card reveal delay-2" data-tilt>
+            <div class="update-image"><img src="assets/castle-card.webp" alt="Ancient Heights map"><span class="tag ruins">RUINS</span></div>
+            <div class="update-body"><small>AREA 03</small><h3>Ancient Heights</h3><p>A high island built around stairs, old structures, bridges and risky vertical routes.</p><a href="#world">Explore area <span>→</span></a></div>
+          </article>
+          <article class="update-card reveal delay-3" data-tilt>
+            <div class="update-image"><img src="assets/city-card.webp" alt="Forgeworks city map"><span class="tag city">CITY</span></div>
+            <div class="update-body"><small>AREA 04</small><h3>Forgeworks</h3><p>The industrial edge of WildWorks: buildings, cranes, rooftops and new movement lines.</p><a href="#world">Explore area <span>→</span></a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="creator-section" id="creators">
+      <div class="creator-bg" aria-hidden="true"></div>
+      <div class="shell creator-grid">
+        <div class="creator-card reveal">
+          <div class="creator-flame"><img src="assets/studio-logo.png" alt=""></div>
+          <div class="eyebrow light">CREATOR SPOTLIGHT</div>
+          <h2>FEATURED<br><span>CREATOR</span></h2>
+          <div class="creator-profile">
+            <img src="assets/gameplay.webp" alt="WildWorks gameplay avatar image" />
+            <div><strong id="creatorHandle">@WildWorksVR</strong><small>WildWorks creator</small></div>
+          </div>
+          <p>Pick the featured creator and video from one small config file. No redesign needed.</p>
+          <div class="creator-actions">
+            <a class="btn btn-orange btn-large" id="creatorChannel" href="https://youtube.com/@WildWorksVR" target="_blank" rel="noreferrer"><span>YOUTUBE</span><b>↗</b></a>
+            <a class="btn btn-discord btn-large" href="https://discord.gg/QYF8mFkycn" target="_blank" rel="noreferrer"><span>DISCORD</span><b>↗</b></a>
+          </div>
+        </div>
+
+        <div class="video-card reveal delay-1">
+          <div class="video-topline"><span>FEATURED SHORT</span><a id="videoDirectLink" href="https://youtube.com/shorts/W32AjYdnJbE" target="_blank" rel="noreferrer">OPEN ON YOUTUBE ↗</a></div>
+          <button class="video-poster" id="videoPoster" type="button" aria-label="Play featured WildWorks creator video">
+            <img src="assets/gameplay.webp" alt="WildWorks gameplay preview" />
+            <span class="play-button"><i></i></span>
+            <span class="video-hint">CLICK TO LOAD VIDEO</span>
+          </button>
+          <div class="video-embed" id="videoEmbed" hidden></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section support-section" id="support">
+      <div class="shell support-grid">
+        <div class="section-heading reveal">
+          <div class="eyebrow"><span class="eyebrow-dot"></span> NEED TO KNOW</div>
+          <h2>WILDWORKS <span>FAQ</span></h2>
+          <p>The questions can be edited straight in the HTML. The accordion animation and accessibility are already wired up.</p>
+          <a class="btn btn-orange btn-large" href="#home"><span>BACK TO TOP</span><b>↑</b></a>
+        </div>
+
+        <div class="support-stack reveal delay-1">
+          <div class="support-links-card">
+            <h3>CONTACT & LINKS</h3>
+            <p>Need help, want to report a bug, or want the main game page?</p>
+            <div class="support-link-list">
+              <a class="support-link" id="emailLink" href="mailto:pyromanicstudios@gmail.com"><span>HELP EMAIL</span><strong>pyromanicstudios@gmail.com</strong></a>
+              <a class="support-link" id="itchLink" href="https://pyromanicstudios.itch.io/wildworks" target="_blank" rel="noreferrer"><span>ITCH.IO PAGE</span><strong>pyromanicstudios.itch.io/wildworks</strong></a>
+              <a class="support-link" id="discordSupportLink" href="https://discord.gg/QYF8mFkycn" target="_blank" rel="noreferrer"><span>DISCORD</span><strong>discord.gg/QYF8mFkycn</strong></a>
+            </div>
+          </div>
+
+          <div class="faq">
+            <article class="faq-item"><button><span>What is WildWorks?</span><i>+</i></button><div class="faq-answer"><p>WildWorks is a movement-focused floating-island adventure game built around exploration, climbing and discovering routes through different biomes.</p></div></article>
+            <article class="faq-item"><button><span>Can I play with friends?</span><i>+</i></button><div class="faq-answer"><p>Use this answer for your actual multiplayer details when they are final. The site is intentionally easy to update.</p></div></article>
+            <article class="faq-item"><button><span>What maps are in the game?</span><i>+</i></button><div class="faq-answer"><p>The current site features Frozen Peaks, Wildwood Hub, Ancient Heights and Forgeworks based on the map images you supplied.</p></div></article>
+            <article class="faq-item"><button><span>How do I report bugs or send feedback?</span><i>+</i></button><div class="faq-answer"><p>Email <a href="mailto:pyromanicstudios@gmail.com">pyromanicstudios@gmail.com</a> or join the WildWorks Discord server for updates and support.</p></div></article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="shell footer-inner">
+      <a class="brand footer-brand" href="#home">
+        <span class="brand-mark"><img src="assets/studio-logo.png" alt=""></span>
+        <span class="brand-copy"><strong>WILDWORKS</strong><small>STUDIO</small></span>
+      </a>
+      <p>Built for the WildWorks project. Static, fast and ready for GitHub Pages.</p>
+      <div class="footer-links"><a href="#world">Game</a><a href="#updates">Updates</a><a href="#creators">Creators</a><a href="https://pyromanicstudios.itch.io/wildworks" target="_blank" rel="noreferrer">Itch.io</a><a href="https://discord.gg/QYF8mFkycn" target="_blank" rel="noreferrer">Discord</a><a href="mailto:pyromanicstudios@gmail.com">Email</a><a href="#support">Support</a></div>
+    </div>
+  </footer>
+
+  <script src="site-data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
